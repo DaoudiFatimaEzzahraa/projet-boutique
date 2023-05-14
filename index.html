@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Boutique en ligne</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+    }
+    /*<!-- =======================header ==================================-->*/
+    h1{
+        background-color: white;
+        color : rgb(60,60,60);
+        padding : 10px;
+        border-radius : 4px;
+        width : 90%;
+        box-shadow : 0px 0px 2px 2px rgba(80,64,64,0.5);
+        text-align: center;
+        margin-left: 5%;
+    }
+    /*<!-- =======================nav ==================================-->*/
+    #panier{
+        box-shadow : 0px 0px 2px 2px rgba(80,64,64,0.5);
+        padding : 4px;
+        border-radius : 4px;
+        background-color: white;
+        height : 100%;
+        width : 250px;
+        top: 90px;
+        right: 50px;
+        position: absolute;
+    }
+    .achat {
+        height : 35px;
+        box-shadow : 0px 0px 4px 2px  rgba(100,255,150,0.8);
+        padding : 3px;
+        display : flex;
+    }
+    #filter {
+        width : 95%;
+        padding: 5px;
+    }
+    .achat h4 {
+        font-size : 10px;
+        font-weight : normal;
+        color : #888888;	
+        margin : 0px 10px;
+    }
+    .achat img{
+        height: 30px;
+    }
+    #total {
+        background-color : rgb(200,0,0);
+        color :white;
+        border-radius : 4px;
+        margin : 4px 2px;
+        padding : 2px;
+    }
+    /*<!-- =======================main ==================================-->*/
+    .produit {
+        width : 20%;	
+        position : relative;
+        height : 50vh;
+        display : inline-table;
+        background-color: white;
+        box-shadow : 0px 0px 6px 2px  rgba(100,255,150,0.8) inset;
+        border-radius : 4px;
+        margin : 2px 2px;
+        left: 70px;
+    }
+    h3{
+        color : rgb(60,60,60);
+        font-size : 17px;
+        padding : 10px 15px;
+    }
+    .description {
+        height : 50px;
+        width : 120px;
+        font-size : 12px;
+        background-color: white;
+        padding : 5px 7px;
+        box-shadow : 0px 0px 6px 2px  rgba(100,255,150,0.8) inset;
+        border-radius : 4px;
+        margin-left: 15px;
+        margin-top: 4px;
+    }
+    .prix {
+        position : absolute;
+        top : 50px;
+        right : 30px;
+        font-size : 14px;
+        background-color : rgb(200,0,0);
+        color : white;
+        padding : 4px;
+        border-radius : 4px;
+    }
+    input {
+        width : 40px;
+        font-size : 17px;
+        text-align : center;
+        border : none;
+    }
+    .choix{
+        width: 50px;
+        height: 70px;
+        background-color: aquamarine;
+        margin-left: 170px;
+        margin-top: -50px;
+    }
+    .commander {
+        width : 30px;
+        height : 30px;
+        border : none;
+        z-index: 1;
+        position: absolute;
+        margin-top: 35px;
+        background-color: aquamarine;
+    }
+    .produit figure {
+        margin : auto;	
+        width : 80%;
+        height : 145px;
+        box-shadow : 0px 0px 4px 2px  rgba(150,255,200,0.75) inset;
+        border-radius : 4px;	
+    }
+    .produit img {
+        margin : 5px;
+        height : 93%;
+        border-radius : 4px;
+    }
+    .maininput{
+        margin-top: 10px;
+        position: absolute;
+        z-index: 1;
+        margin-left: 3px;
+    }
+</style>
+<body>
+    <!-- =======================header ==================================-->
+  <header>
+    <h1>Ma boutique en ligne</h1>
+  </header>
+  <!-- =======================nav ==================================-->
+  <div id="panier">
+    <input id="filter" placeholder="rechercher des produits...">							
+    <div id="total">Total du panier: <span id="montant">0dh</span></div>	
+    <div class="achats"></div>
+  </div>
+  <!-- =======================main ==================================-->
+  <main>
+    <div class="produit">
+      <h3>Nounours marron</h3>
+      <figure><img src="Capture d’écran 2023-04-24 130533.jpg"></figure>
+			<div class="description">un joli nounours marron avec un foulard</div>
+			<div class="prix">35 dh</div>
+      <div class="choix">
+        <input class="maininput" min="0" type="number" value="0"></input>
+			  <button class="commander" ><img src="./4357328.png" ></button>
+      </div>
+    </div>
+    <div class="produit">
+      <h3>Nounours blanc</h3>
+      <figure><img src="gros-nounours-blanc-galaxiepeluche.jpg"></figure>
+			<div class="description">un ours blanc tout doux</div>
+			<div class="prix">42 dh</div>
+      <div class="choix">
+        <input class="maininput" min="0" type="number" value="0"></input>
+			  <button class="commander" ><img src="./4357328.png" ></button>
+      </div>
+    </div>
+    <div class="produit">
+      <h3>Ane gris</h3>
+      <figure><img src="images.jpg" ></figure>
+			<div class="description">un joli petit ane gris</div>
+			<div class="prix">15 dh</div>
+      <div class="choix">
+        <input class="maininput" min="0" type="number" value="0"></input>
+			  <button class="commander" ><img src="./4357328.png" ></button>
+      </div>
+    </div><br>
+    <div class="produit">
+      <h3>Pokemon bulbizarra</h3>
+      <figure><img src="images (1).jpg" ></figure>
+			<div class="description">un joli pokemon bulbizarra</div>
+			<div class="prix">25 dh</div>
+      <div class="choix">
+          <input class="maininput" min="0" type="number" value="0"></input>
+			    <button class="commander" ><img src="./4357328.png" ></button>
+      </div>
+    </div>
+    <div class="produit">
+      <h3>Cochon rose</h3>
+      <figure><img src="téléchargement.jpg" ></figure>
+			<div class="description">un joli cochon rose</div>
+			<div class="prix">35 dh</div>
+      <div class="choix">
+          <input class="maininput" min="0" type="number" value="0"></input>
+			    <button class="commander" ><img src="./4357328.png" ></button>
+      </div>
+    </div>
+    <div class="produit">
+      <h3>Donkey kong</h3>
+      <figure><img src="images (2).jpg" ></figure>
+			<div class="description">un donkey kong</div>
+			<div class="prix">25 dh</div>
+      <div class="choix">
+          <input class="maininput" min="0" type="number" value="0"></input>
+			    <button class="commander" ><img src="./4357328.png" ></button>
+      </div>
+    </div>
+  </main>
+</body>
+  <!-- =======================script ==================================-->
+<script>
+  // nouvel Achat
+  const commanderButtons = document.querySelectorAll(".commander");
+  let prixTotal = 0;
+  commanderButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const produit = button.closest(".produit");
+      const nouvelAchat = document.createElement("div");
+      nouvelAchat.className = "achat";
+      const imageProduit = document.createElement("img");
+      imageProduit.src = produit.querySelector("img").src;
+      nouvelAchat.appendChild(imageProduit);
+      const nomPrixProduit = document.createElement("h4");
+      const nom = produit.querySelector("h3").textContent;
+      const prixString = produit.querySelector(".prix").textContent;//convertit prix 'string' en nombre 
+        let prixNumerique = "";
+        for (let i = 0; i < prixString.length; i++) {
+          const caractere = prixString[i];
+          if (!isNaN(caractere) || caractere === "." || caractere === "-") {
+            prixNumerique += caractere;
+          }
+        }
+      const prix = parseFloat(prixNumerique);
+      const quantite = Number(produit.querySelector(".maininput").value);
+      const prixTotalProduit = prix * quantite;
+      nomPrixProduit.textContent = `${nom} - ${prixTotalProduit.toFixed(2)} MAD`;
+      nouvelAchat.appendChild(nomPrixProduit);
+      const listeAchats = document.querySelector(".achats");
+      // pour supprimer l'élément nouvelAchat
+      listeAchats.appendChild(nouvelAchat);
+      const imageTelechargement2 = document.createElement("img");
+      imageTelechargement2.src = "téléchargement2.png";
+      nouvelAchat.appendChild(imageTelechargement2);
+      imageTelechargement2.addEventListener("click", () => {
+        listeAchats.removeChild(nouvelAchat);
+        prixTotal += prixTotalProduit;
+        const prixTotalElement = document.querySelector(".prixtotal");
+        prixTotalElement.textContent = `Total : ${prixTotal.toFixed(2)} MAD`;
+      });
+    });
+  });
+  // la barre de recherche ! Rq: mettre dans la barre de recherche le nom total du produit !
+  const inputRecherche = document.querySelector("#filter");
+  inputRecherche.addEventListener("keydown", (event) => {// "keydown" pour détecter la touche "Entrée"
+    if (event.key === "Enter") {
+      const valeurRecherche = inputRecherche.value.toLowerCase();
+      const produits = document.querySelectorAll(".produit");
+      let produitTrouve = false;//indiquer qu'au début aucun produit n'a encore été trouvé
+      produits.forEach((produit) => {
+        const nomProduit = produit.querySelector("h3").textContent.toLowerCase();
+        if (nomProduit === valeurRecherche) {
+          produit.style.backgroundColor = "blue";
+          produitTrouve = true;
+        } else {
+          produit.style.backgroundColor = "";
+        }
+      });
+      const divProduit = document.querySelector(".produit");
+      if (!produitTrouve) {
+        inputRecherche.style.backgroundColor = "red";
+        inputRecherche.value = "";
+        inputRecherche.placeholder = "Ce produit n'existe pas";
+      } else {
+        inputRecherche.style.backgroundColor = "";
+        inputRecherche.placeholder = "Rechercher des produits...";
+      }
+    }
+  });
+</script>
+</html>
